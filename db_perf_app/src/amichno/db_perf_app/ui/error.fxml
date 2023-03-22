@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="amichno.db_perf_app.ui.ErrorController">
+    <center>
+        <TextArea fx:id="errorMessage" editable="false"/>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER">
+            <Button text="Zamknij aplikację" onAction="#closeApplication"/>
+        </HBox>
+    </bottom>
+</BorderPane>

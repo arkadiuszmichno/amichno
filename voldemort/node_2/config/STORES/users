@@ -1,0 +1,17 @@
+<store>
+  <name>users</name>
+  <persistence>bdb</persistence>
+  <description>Users store</description>
+  <routing-strategy>consistent-routing</routing-strategy>
+  <routing>client</routing>
+  <replication-factor>4</replication-factor>
+  <required-reads>2</required-reads>
+  <required-writes>3</required-writes>
+  <key-serializer>
+    <type>string</type>
+  </key-serializer>
+  <value-serializer>
+    <type>json</type>
+    <schema-info version="1">{"name":"string", "email":"string", "age":"int16", "phone":"string"}</schema-info>
+  </value-serializer>
+</store>
